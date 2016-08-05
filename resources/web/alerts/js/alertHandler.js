@@ -102,7 +102,7 @@ connection.onmessage = function(e) {
             duration = 3000;
         } 
         imageFileBasename = imageFile.substring(0, imageFile.indexOf('.'));
-
+        $("#imageLocation img").attr('src',''); // loonygeekfun here
         $("#imageLocation").html('<img src="/alerts/data/' + imageFile + '">').fadeIn(1000);
 
         // If the file doesn't exist a DOM error is tossed to the Console.
